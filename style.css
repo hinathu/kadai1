@@ -1,0 +1,105 @@
+/*ブラウザがそれぞれ持っているcssをリセット*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  background-color: #ff9a4b;
+}
+
+main {
+  width: 960px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.main-item {
+  width: 300px;
+  background-color: #eeeeee;
+  margin-right: 30px;
+}
+
+.main-item:last-child {
+  margin-right: auto;
+}
+
+.item-name {
+  background-color: #ff9a4b;
+  position: absolute;
+  color: #ffffff;
+}
+
+.item-image {
+  width: 280px;
+  height: 150px;
+  margin: 10px 10px 15px 10px;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.image1 {
+  background-image: url(img/flow01.png);
+}
+
+.image2 {
+  background-image: url(img/flow02.png);
+}
+
+.image3 {
+  background-image: url(img/flow03.png);
+}
+
+.item-title {
+  margin: 0 10px 10px 5px;
+  font-size: 17px;
+}
+
+.item-text {
+  margin: 0 10px 10px 5px;
+  font-size: 13px;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: #aaaaaa;
+}
+
+/*スマートフォン(425px)以下の際に適用される設定*/
+@media screen and (max-width: 425px) {
+
+  header {
+    width: 100%;
+  }
+
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-item {
+    width: 90%;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+
+  .main-item:last-child {
+    margin-bottom: auto;
+  }
+
+  .item-image {
+    width: 95%;
+    height: 150px
+  }
+
+  footer {
+    width: 100%;
+  }
+
+}
