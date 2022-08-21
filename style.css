@@ -68,7 +68,9 @@ footer {
 
   main {
     width: 100%;
+    display: block;
     flex-direction: column;
+    margin-left: 35px;
   }
 
   .main-item {
